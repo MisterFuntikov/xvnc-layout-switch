@@ -11,6 +11,13 @@ xrdp.override_keyboard_subtype=0x01
 xrdp.override_keylayout=0x00001419
 ```
 
+**3.** В файл `/usr/libexec/xrdp/startwm.sh` добавить в начало:
+```sh
+/bin/setxkbmap -layout us,ru
+```
+
 ---
 
 Переключение раскладки происходит по нажатию клавиши **CapsLock**
+
+Протестировано на версиях
